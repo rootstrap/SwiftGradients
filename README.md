@@ -11,7 +11,7 @@
 
 ## What is it?
 
-**SwiftGradients** gives you useful extensions for UIViews and CALayer classes to add beautiful color gradients.
+**SwiftGradients** gives you useful extensions for `UIViews` and `CALayer` classes to add beautiful color gradients.
 
 ## Installation
 
@@ -20,7 +20,6 @@
 ```ruby
 
 pod 'SwiftGradients', '~> 1.0.0'
-
 ```
 
 #### 2. Carthage
@@ -46,8 +45,32 @@ That should be it. **SwiftGradients** should appear in the navigation panel as a
 
 ## Usage
 
-Coming Soon :)
+#### 1. Adding gradients to your subviews
 
+```swift
+let gradientLayer = view.addGradient(
+  colors: [.blue, .green],
+  direction: .topToBottom
+)
+```
+
+#### 2. Customize options for your gradient
+
+You can set a custom angle(measured in degrees and anti-clockwise), rather that one of the four predefined directions.
+Also, you can provide the color stop locations for better accuracy.
+
+```swift
+let gradientLayer = view.addGradient(
+  colors: [.blue, .green, .black],
+  angle: 45
+  locations: [0, 50, 75]
+)
+```
+
+#### Voilà
+
+<img src="https://github.com/rootstrap/SwiftGradients/blob/master/gradient-preview.png" height="500"/>
+<br/>
 
 ## Example
 
