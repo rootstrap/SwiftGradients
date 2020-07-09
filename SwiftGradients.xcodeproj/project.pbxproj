@@ -10,13 +10,28 @@
 		9B0A60CE24B658D000812410 /* UIViewGradientsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A60CD24B658D000812410 /* UIViewGradientsExtension.swift */; };
 		9B0A60D024B6595000812410 /* CALayerGradientsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A60CF24B6595000812410 /* CALayerGradientsExtension.swift */; };
 		9B0A60D224B65A6D00812410 /* CAGradientLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A60D124B65A6D00812410 /* CAGradientLayerExtension.swift */; };
+		9B0A60E424B7566000812410 /* SwiftGradientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A60E324B7566000812410 /* SwiftGradientsTests.swift */; };
+		9B0A60E624B7566000812410 /* SwiftGradients.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFC1182249270E800AECF6C /* SwiftGradients.framework */; platformFilter = ios; };
 		9BFC1187249270E800AECF6C /* SwiftGradients.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFC1185249270E800AECF6C /* SwiftGradients.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B0A60E724B7566000812410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BFC1179249270E800AECF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BFC1181249270E800AECF6C;
+			remoteInfo = SwiftGradients;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9B0A60CD24B658D000812410 /* UIViewGradientsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewGradientsExtension.swift; sourceTree = "<group>"; };
 		9B0A60CF24B6595000812410 /* CALayerGradientsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerGradientsExtension.swift; sourceTree = "<group>"; };
 		9B0A60D124B65A6D00812410 /* CAGradientLayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerExtension.swift; sourceTree = "<group>"; };
+		9B0A60E124B7566000812410 /* SwiftGradientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGradientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0A60E324B7566000812410 /* SwiftGradientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGradientsTests.swift; sourceTree = "<group>"; };
+		9B0A60E524B7566000812410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFC1182249270E800AECF6C /* SwiftGradients.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGradients.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFC1185249270E800AECF6C /* SwiftGradients.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGradients.h; sourceTree = "<group>"; };
 		9BFC1186249270E800AECF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +40,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9B0A60DE24B7566000812410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0A60E624B7566000812410 /* SwiftGradients.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BFC117F249270E800AECF6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0A60E224B7566000812410 /* SwiftGradientsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B0A60E324B7566000812410 /* SwiftGradientsTests.swift */,
+				9B0A60E524B7566000812410 /* Info.plist */,
+			);
+			path = SwiftGradientsTests;
+			sourceTree = "<group>";
+		};
 		9BFC1178249270E800AECF6C = {
 			isa = PBXGroup;
 			children = (
@@ -42,6 +74,7 @@
 				9BFC119F2492902000AECF6C /* README.md */,
 				9BFC118E249273CE00AECF6C /* Sources */,
 				9BFC1184249270E800AECF6C /* Supporting Files */,
+				9B0A60E224B7566000812410 /* SwiftGradientsTests */,
 				9BFC1183249270E800AECF6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9BFC1182249270E800AECF6C /* SwiftGradients.framework */,
+				9B0A60E124B7566000812410 /* SwiftGradientsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +121,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9B0A60E024B7566000812410 /* SwiftGradientsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0A60E924B7566000812410 /* Build configuration list for PBXNativeTarget "SwiftGradientsTests" */;
+			buildPhases = (
+				9B0A60DD24B7566000812410 /* Sources */,
+				9B0A60DE24B7566000812410 /* Frameworks */,
+				9B0A60DF24B7566000812410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B0A60E824B7566000812410 /* PBXTargetDependency */,
+			);
+			name = SwiftGradientsTests;
+			productName = SwiftGradientsTests;
+			productReference = 9B0A60E124B7566000812410 /* SwiftGradientsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9BFC1181249270E800AECF6C /* SwiftGradients */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BFC118A249270E800AECF6C /* Build configuration list for PBXNativeTarget "SwiftGradients" */;
@@ -111,9 +163,13 @@
 		9BFC1179249270E800AECF6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Rootstrap;
 				TargetAttributes = {
+					9B0A60E024B7566000812410 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					9BFC1181249270E800AECF6C = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -133,11 +189,19 @@
 			projectRoot = "";
 			targets = (
 				9BFC1181249270E800AECF6C /* SwiftGradients */,
+				9B0A60E024B7566000812410 /* SwiftGradientsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9B0A60DF24B7566000812410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BFC1180249270E800AECF6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +212,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9B0A60DD24B7566000812410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0A60E424B7566000812410 /* SwiftGradientsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BFC117E249270E800AECF6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,7 +232,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9B0A60E824B7566000812410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 9BFC1181249270E800AECF6C /* SwiftGradients */;
+			targetProxy = 9B0A60E724B7566000812410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9B0A60EA24B7566000812410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNU857N39T;
+				INFOPLIST_FILE = SwiftGradientsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.SwiftGradientsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B0A60EB24B7566000812410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNU857N39T;
+				INFOPLIST_FILE = SwiftGradientsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.SwiftGradientsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9BFC1188249270E800AECF6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,6 +462,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9B0A60E924B7566000812410 /* Build configuration list for PBXNativeTarget "SwiftGradientsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0A60EA24B7566000812410 /* Debug */,
+				9B0A60EB24B7566000812410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BFC117C249270E800AECF6C /* Build configuration list for PBXProject "SwiftGradients" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
