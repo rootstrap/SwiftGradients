@@ -29,7 +29,7 @@ public extension CALayer {
   @discardableResult
   func addGradient(
     colors: [UIColor],
-    angle: Double,
+    angle: CGFloat,
     locations: [Int] = []
   ) -> CAGradientLayer {
     return addGradient(
@@ -57,12 +57,12 @@ public extension CALayer {
       insertSublayer(gradient, at: 0)
     }
     gradient.frame = bounds
-    gradient.colors = colors.map { $0.cgColor }
+    gradient.uiColors = colors
     
     gradient.startPoint = startPoint
     gradient.endPoint = endPoint
     if !locations.isEmpty {
-      gradient.locations = locations.map { NSNumber(value: Float($0) / 100.0) }
+      gradient.percentLocations = locations
     }
     return gradient
   }

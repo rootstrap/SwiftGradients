@@ -10,11 +10,37 @@ import Foundation
 #if canImport(UIKit)
 import UIKit
 
-public enum GradientDirection: Double {
-  case topToBottom = 90.0
-  case bottomToTop = 270.0
-  case leftToRight = 180.0
-  case rightToLeft = 0.0
+public enum GradientDirection: CGFloat, CaseIterable {
+  case leftToRight = 0
+  case topToBottom = 90
+  case rightToLeft = 180
+  case bottomToTop = 270
+  
+  var startPoint: CGPoint {
+    switch self {
+    case .topToBottom:
+      return CGPoint(x: 0.5, y: 0.0)
+    case .bottomToTop:
+      return CGPoint(x: 0.5, y: 1.0)
+    case .leftToRight:
+      return CGPoint(x: 0.0, y: 0.5)
+    case .rightToLeft:
+      return CGPoint(x: 1.0, y: 0.5)
+    }
+  }
+  
+  var endPoint: CGPoint {
+    switch self {
+    case .topToBottom:
+      return CGPoint(x: 0.5, y: 1.0)
+    case .bottomToTop:
+      return CGPoint(x: 0.5, y: 0.0)
+    case .leftToRight:
+      return CGPoint(x: 1.0, y: 0.5)
+    case .rightToLeft:
+      return CGPoint(x: 0.0, y: 0.5)
+    }
+  }
 }
 
 public extension UIView {
@@ -35,7 +61,7 @@ public extension UIView {
   @discardableResult
   func addGradient(
     colors: [UIColor],
-    angle: Double,
+    angle: CGFloat,
     locations: [Int] = []
   ) -> CAGradientLayer {
     return addGradient(
@@ -73,7 +99,7 @@ public extension Array where Element: UIView {
     }
   }
   
-  func addGradient(colors: [UIColor], angle: Double, locations: [Int] = []) {
+  func addGradient(colors: [UIColor], angle: CGFloat, locations: [Int] = []) {
     for view in self {
       view.addGradient(colors: colors, angle: angle, locations: locations)
     }
