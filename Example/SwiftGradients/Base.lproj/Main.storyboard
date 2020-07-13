@@ -25,11 +25,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to change gradient" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqG-SY-hI1">
+                                <rect key="frame" x="114" y="639" width="147" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KqG-SY-hI1" secondAttribute="bottom" constant="10" id="1Sj-eQ-zIk"/>
                             <constraint firstItem="3GL-vY-2yd" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.8" id="X40-O0-ygs"/>
                             <constraint firstItem="3GL-vY-2yd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="miu-fV-fUK"/>
+                            <constraint firstItem="KqG-SY-hI1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="pZr-yC-A0n"/>
                         </constraints>
                     </view>
                 </viewController>
