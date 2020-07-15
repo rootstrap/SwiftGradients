@@ -45,7 +45,10 @@ extension CAGradientLayer {
     get {
       if
         let direction = GradientDirection.allCases.first(where: { direction in
-          startPoint == direction.startPoint && endPoint == direction.endPoint
+          abs(direction.startPoint.x - startPoint.x) <= .ulpOfOne &&
+          abs(direction.startPoint.y - startPoint.y) <= .ulpOfOne &&
+          abs(direction.endPoint.x - endPoint.x) <= .ulpOfOne &&
+          abs(direction.endPoint.y - endPoint.y) <= .ulpOfOne
         })
       {
         return direction
